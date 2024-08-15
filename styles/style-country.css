@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root{
+    --background-color : #fafafa;
+    --primary-color : #fff;
+    --text-color : #111517;
+    --second-text-color : #848484;
+}
+.dark-mode{
+    --background-color : #202C36;
+    --primary-color :  #2B3844;
+    --text-color : #fff;
+    --second-text-color : #fff;
+
+}
+
+body{
+    font-family: Nunito Sans;
+    background-color: var(--background-color);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    color: var(--text-color);
+    padding: 0px 80px;
+    box-shadow: 0px 4px 4px 0px #0000000E;
+    height: 80px;
+}
+
+.header .first-seciton h1{
+    font-size: 24px;
+    font-weight: 800;
+    
+}
+.header .second-section{
+    display: flex;
+    max-width: 108px;
+    align-items: center;
+    cursor: pointer;
+}
+.header .second-section p{
+    font-weight: 600;
+    font-size: 16px;
+}
+.header .second-section p:hover{
+    text-decoration: underline;
+}
+.dark-mode-icon{
+    width: 15px;
+    height: 13.75px;
+    margin-right: 8px;
+}
+
+.middle-section{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding-left: 40px;
+}
+.middle-section .back-button{
+    
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    width: 100px;
+    height: 30px;
+    font-weight: 300;
+    font-size: 14px;
+    box-shadow: 0px 0px 7px 0px #0000004B;
+    cursor: pointer;
+}
+.middle-section .back-button .back-icon{
+    width: 16px;
+    margin-right: 14px;
+}
+
+.country-own-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.country-own-page .country-flag{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    height: 375px;
+}
+.country-own-page .country-flag .country-flag-image{
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+}
+.country-own-page .country-informations{
+    width: 600px;
+    display: grid;
+    margin-right: 60px;
+    color: var(--text-color);
+}
+.country-own-page .country-informations .country-name{
+    font-weight: 800;
+    font-size: 32px;
+}
+.country-own-page .country-informations .country-informations-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.country-own-page .country-informations-section-1,
+.country-informations-section-2
+ p{
+    font-weight: 600;
+    font-size: 16px;
+}
+.country-own-page .country-informations-section-1,
+.country-informations-section-2 span{
+    font-weight: 400;
+    font-size: 16px;
+}
+.country-own-page .country-informations .country-border-countries{
+    width: 100%;
+    height: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.country-own-page .country-informations .country-border-countries p:first-child{
+    font-weight: 600;
+    font-size: 16px;
+}
+.country-own-page .country-informations .country-border-countries .border-country{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 96px;
+    font-weight: 300;
+    font-size: 14px;
+    border: none;
+    box-shadow: 0px 0px 4px 1px #0000001B;
+
+}

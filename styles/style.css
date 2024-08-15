@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root{
+    --background-color : #fafafa;
+    --primary-color : #fff;
+    --text-color : #111517;
+    --second-text-color : #848484;
+}
+.dark-mode{
+    --background-color : #202C36;
+    --primary-color :  #283541;
+    --text-color : #fff;
+    --second-text-color : #fff;
+
+}
+
+body{
+    font-family: Nunito Sans;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    color: var(--text-color);
+    margin: 0px;
+    padding: 0px 80px;
+    box-shadow: 0px 4px 4px 0px #0000000E;
+}
+
+.header .first-seciton h1{
+    font-size: 24px;
+    font-weight: 800;
+    
+}
+.header .second-section{
+    display: flex;
+    max-width: 108px;
+    align-items: center;
+    cursor: pointer;
+}
+.header .second-section p{
+    font-weight: 600;
+    font-size: 16px;
+}
+.header .second-section p:hover{
+    text-decoration: underline;
+}
+.dark-mode-icon{
+    width: 15px;
+    height: 13.75px;
+    margin-right: 8px;
+}
+
+.search-filter-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 80px;
+    margin-top: 48px;
+    
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    width: 480px;
+    height: 56px;
+    box-shadow: 0px 2px 9px 0px #0000000E;
+    border: none;
+    border-radius: 11px;
+}
+.search-container .search-bar{
+    background-color: var(--primary-color);
+    color: var(--second-text-color);
+    width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    margin-right: 0px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.search-container .search-bar:focus{
+    outline: none;
+}
+.search-container .search-bar::placeholder{
+    color: var(--second-text-color);
+}
+.search-container .search-button{
+    width: 20%;
+    height: 100%;
+    background-color: var(--primary-color);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-container .search-button .search-button-icon{
+    height: 18px;
+    width: 18px;
+}
+
+.filter-container{
+    min-width: 200px;
+    height: 56px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 10px;
+}
+.filter-container .filter-region{
+    width: 100%;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 0px 30px 0px 15px;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 400;
+    box-shadow: 0px 2px 9px 0px #0000000E;
+    outline: none;
+}
+.filter-container .filter-region option{
+    background-color: var(--primary-color);
+    border: none;
+    font-weight: 400;
+    font-size: 15px;
+    box-shadow: 0px 2px 9px 0px #0000000E;
+}
+
+.countries-list{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    column-gap: 55px;
+    row-gap: 50px;
+    margin: 48px 4rem 50px 4rem;
+}
+
+@media (max-width: 600px) {
+    .countries-list{
+      grid-template-columns: 1fr;
+      margin: 48px 80px 50px 80px;
+    }
+}
+@media (min-width: 600px) and (max-width: 950px) {
+    .countries-list{
+      grid-template-columns: 1fr 1fr;
+      margin:48px 20px 50px 20px ;
+    }
+}
+  
+@media (min-width: 950px) and (max-width: 1250px) {
+    .countries-list{
+      grid-template-columns: 1fr 1fr 1fr ;
+      margin: 48px 30px 50px 30px;
+    }
+}
+  
+@media (min-width: 1250px) {
+    .countries-list{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+.country{
+    max-width: 264px;
+    display: grid;
+    grid-template-rows: 160px 40px auto;
+    box-shadow: 0px 0px 7px 2px #00000008;
+    background-color: var(--primary-color);
+    cursor: pointer;
+
+}
+.country .country-flag{
+    width: 264px;
+}
+.country .country-flag .country-flag-image{
+    width: 100%;
+    height: 100%;
+}
+.country .country-name{
+    font-weight: 800;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+.country-informations{
+    padding: 10px 20px;
+}
+.country .country-informations p{
+    font-weight: 600;
+    font-size: 16px;
+}
+.country .country-informations span{
+    font-weight: 300;
+    font-size: 14px;
+}
